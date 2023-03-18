@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+            <a href="index.html" class="w3-bar-item w3-button"><b>SkyLine</b> Furniture</a>
+            <!-- Float links to the right. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+                <a href="mailto:reen113355@gmail.com" class="w3-bar-item w3-button">Email</a>
+                <a href="https://www.facebook.com/skylinefurniture2016/" class="w3-bar-item w3-button"><img
+                        src="pictures/facebook.png" alt="facebook" style="height: 25px;width: 25px;"></a>
+                <a href="https://www.instagram.com/skytrading/?hl=en" class="w3-bar-item w3-button"><img
+                        src="pictures/Instagram.png" alt="instagram" style="height: 25px;width: 25px;"></a>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div>
+        <img src="pictures/BQBQ.JPG" alt="help" style="Float: right;width: 40%;">
+
+        <form>
+            length of spung in inches: <input type="text" id="firstNumber" /><strong><span
+                    style="color: red;">NOTE:</span></strong>this calculation does not include the arms on the sides<br>
+            width of spung in inches: <input type="text" id="secondNumber" /><br>
+            <select name="height" id="height">
+                height of spung in inches: <option value="300" id="thirdNumber"><br>
+            </select>
+            <input type="button" onClick="withstorage()" Value="with storage" />
+            <input type="button" onClick="withoutstorage()" Value="without storage" />
+            <input type="reset">
+
+        </form>
+        <p>The cost is : <br>
+            <span id="result">$</span>
+            <script>
+                document.getElementById("demo").innerHTML = text;
+                function withstorage() {
+                    num1 = document.getElementById("firstNumber").value;
+                    num2 = document.getElementById("secondNumber").value;
+                    num3 = document.getElementById("thirdNumber").value;
+                    document.getElementById("result").innerHTML = (num1 / 39.25) * 250;
+                }
+
+                function withoutstorage() {
+                    num1 = document.getElementById("firstNumber").value;
+                    num2 = document.getElementById("secondNumber").value;
+                    document.getElementById("result").innerHTML = (num1 / 39.25) * 200;
+                }
+            </script>
+
+</body>
+
+</html>
