@@ -32,34 +32,42 @@
       <br>
       <br>
       <br>
-      <div class="container test">
-         <div class="container_height eventClick">
+      <div class="container">
+         <button class="btn" id="prevStep">Previos</button>
+         <div class="info"></div>
+         <!-- Height -->
+         <div class="container_height eventClick" data-step="1">
             <div>
                <form action="specification">
                   <label for="height">choose the height</label> 
                   <select name="height" id="height">
                      <optgroup>
                         <option value="">--Please choose an option--</option>
-                        <option value="4">4 inches </option>
-                        <option value="6">6 inches </option>
-                        <option value="8">8 inches </option>
-                        <option value="10">10 inches </option>
-                        <option value="12">12 inches </option>
-                        <option value="14">14 inches </option>
-                        <option value="16">16 inches </option>
-                        <option value="18">18 inches </option>
-                        <option value="20">20 inches </option>
+                        <option value="4 inches">4 inches </option>
+                        <option value="6 inches">6 inches </option> inches
+                        <option value="8 inches">8 inches </option>
+                        <option value="10 inches">10 inches </option>
+                        <option value="12 inches">12 inches </option>
+                        <option value="14 inches">14 inches </option>
+                        <option value="16 inches">16 inches </option>
+                        <option value="18 inches">18 inches </option>
+                        <option value="20 inches">20 inches </option>
                      </optgroup>
                   </select>
             </div>
             <br>
-            <a href="" class="card-image"><img data-select="4" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px; " /> </a> 
-            <a href="" class="card-image"><img data-select="6" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px; " /> </a> 
-            <a href="" class="card-image"><img data-select="8" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px; " /> </a>
-            <a href="" class="card-image"><img data-select="10" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px; " /> </a> 
+            <a href="" class="card-image"><img data-select="4 inches" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px; " /> </a> 
+            <a href="" class="card-image"><img data-select="6 inches" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px; " /> </a> 
+            <a href="" class="card-image"><img data-select="8 inches" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px; " /> </a>
+            <a href="" class="card-image"><img data-select="10 inches" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px; " /> </a> 
+            <a href="" class="card-image"><img data-select="12 inches" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px; " /> </a> 
+            <a href="" class="card-image"><img data-select="14 inches" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px; " /> </a> 
+            <a href="" class="card-image"><img data-select="16 inches" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px; " /> </a>
+            <a href="" class="card-image"><img data-select="18 inches" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px; " /> </a> 
+            <a href="" class="card-image"><img data-select="20 inches" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px; " /> </a> 
          </div>
-         <hr>
-         <div class="container_height eventClick">
+         <!-- Fabric -->
+         <div data-step="2" class="container_height eventClick hide">
          <label for="fabric">choose the type of fabric</label>
          <select name="fabric" id="fabric">
          <optgroup>
@@ -71,25 +79,33 @@
          <br>
          <a href="" class="card-image"><img data-select="chinese" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a>
          <a href="" class="card-image"><img data-select="turkish" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
-         <hr>
+         
         </div>
+        <!-- Back -->
+        <div data-step="3" class="container_height eventClick hide">
          <label for="back" required>design of back piece</label>
-         <select name="height" id="height">
+         <select name="fabric" id="fabric">
          <optgroup>
          <option value="">--Please choose an option--</option>
          <option value="one cut"> one cut </option>
          <option value="two cuts">two cuts </option>
-         <option value="4">no cut square </option>
-         <option value="4">wave </option>
+         <option value="no cut">no cut square </option>
+         <option value="wave">wave </option>
          </optgroup>
          </select>
-         
          <br>
-         <hr>
-         <div class="container_height eventClick">
-         <div>
+         <a href="" class="card-image"><img data-select="one cut" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a>
+         <a href="" class="card-image"><img data-select="two cuts" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
+         <a href="" class="card-image"><img data-select="no cut" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a>
+         <a href="" class="card-image"><img data-select="wave" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
+         
+      </div>
+         <br>
+         
+         <!-- Look of seat -->
+        <div data-step="4" class="container_height eventClick hide">
          <label for="seat">look of seat</label>
-         <select name="height" id="height">
+         <select name="look" id="look">
          <optgroup>
          <option value="">--Please choose an option--</option>
          <option value="3 cuts">3 cuts(not avalible for 8 inches or less ) </option>
@@ -97,70 +113,86 @@
          <option value="1 cuts">1 cut </option>
          <option value="no cut">no cut </option>
          </select>
-         </div>
          <br>
          <a href="" class="card-image"><img data-select="3 cuts" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
          <a href="" class="card-image"><img data-select="2 cuts" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
          <a href="" class="card-image"><img data-select="1 cuts" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
          <a href="" class="card-image"><img data-select="no cut" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
-        </div>
-         <hr>
+      </div>
          
+         
+         <!-- Corners -->
+        <div data-step="5" class="container_height eventClick hide">
          <div>
-         <label for="frontHalfCircle">do you want a half circle in the front</label>
-         <select name="half circle" id="half circle">
+         <label for="frontHalfCircle">do you want corners a half circle in the front</label>
+         <select name="half circle" id="halfCircle">
          <optgroup>
          <option value="">--Please choose an option--</option>
-         <option value="y"> no </option>
-         <option value="n"> yes </option>
+         <option value="corners"> yes </option>
+         <option value="no corners"> no </option>
          </optgroup>
          </select>
          </div>
+         <a href="" class="card-image"><img data-select="corners" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
+         <a href="" class="card-image"><img data-select="no corners" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
+         </div>
          <br>
-         <hr>
-         <div class="pillow">
+         
+         <!-- Look Pillow -->
+         <div data-step="6" class="pillow container_height eventClick hide">
+            <div>
          <label for="pillow">choose the look of pillow</label>
-         <select name="height" id="height">
-         <optgroup>
+         <select name="pillowLook" id="pillowLook">
          <option value="">--Please choose an option--</option>
          <option value="rectangle">rectangle </option>
          <option value="square">squarish </option>
-         </optgroup>
+
          </select>
-         <img src="pictures/BQBQ.JPG" alt="" height="200px">
-         <img src="pictures/BQBQ.JPG" alt="" height="200px">
+      </div>
+         <a href="" class="card-image"><img data-select="rectangle" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
+         <a href="" class="card-image"><img data-select="square" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
          </div>
          <br>
-         <hr>
+         
+
+          <!-- Pillow Top-->
+          <div data-step="7" class="pillow container_height eventClick hide">
          <div>
          <label for="pillowtop">do you want a pillow top</label>
          <select name="pillowtop" id="pillowtop">
-         <optgroup label="yes">
          <option value="">--Please choose an option--</option>
-         <option value="thick">thick </option>
-         <option value="thin">thin </option>
-         </optgroup>
-         <optgroup label="no">
-         <option value="no">no </option>
-         </optgroup>
+         <option value="thick pillowtop">thick </option>
+         <option value="thin pillowtop">thin </option>
+         <option value="no pillowtop">no </option>
          </select>
          </div>
+         <a href="" class="card-image"><img data-select="thick pillowtop" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
+         <a href="" class="card-image"><img data-select="thin pillowtop" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
+         <a href="" class="card-image"><img data-select="no pillowtop" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
+      </div>
          <br>
-         <hr>
+         <!-- Arm rest-->
+         <div data-step="8" class="pillow container_height eventClick hide">
          <div>
          <label for="pillow">choose the look of the arm rest</label>
          <select name="arm rest" id="arm rest">
          <optgroup>
          <option value="">--Please choose an option--</option>
-         <option value="noArm">no arm </option>
-         <option value="rectangle">rectangle </option>
-         <option value="rectangle">slope </option>
-         <option value="square">half circle </option>
+         <option value="no arm">no arm </option>
+         <option value="rectangle arm">rectangle </option>
+         <option value="slope arm">slope </option>
+         <option value="square arm">half circle </option>
          </optgroup>
          </select>
          </div>
+         <a href="" class="card-image"><img data-select="no arm" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
+         <a href="" class="card-image"><img data-select="rectangle arm" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
+         <a href="" class="card-image"><img data-select="slope arm" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
+         <a href="" class="card-image"><img data-select="square arm" src="..\pictures\yemencus.JPG" style="height: 250px; width: 300px;" /> </a> 
+      </div>
          <br>
-         <hr>
+         
+         <div data-step="9" class="pillow container_height eventClick hide">
          <textarea name="note" id="note" cols="30" rows="10" placeholder="leave a note"></textarea>
          <br>
          <label>send us a file if you like to do so</label>
@@ -173,8 +205,9 @@
          <br>
          <input type="submit" name="submit" id="">
          <input type="reset" name="" id="">
-      </div>
+      
       </form>
+   </div>
       <div>
          <table border="4" align="center">
             <figcaption style="text-align: center;">prices of majles per meter</figcaption>

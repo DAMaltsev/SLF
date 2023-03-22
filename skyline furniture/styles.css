@@ -15,6 +15,10 @@
   color: brown;
 }
 
+.hide {
+  display: none;
+}
+
 .desmor {}
 
 .select {
