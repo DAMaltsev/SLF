@@ -1,34 +1,248 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <title>W3.CSS Template</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp"
+    crossorigin="anonymous"
+  />
 
-<body>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
 
+  <body>
     <!-- Navbar (sit on top) -->
     <div class="w3-top">
-        <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-            <a href="index.html" class="w3-bar-item w3-button"><b>SkyLine</b> Furniture</a>
-            <!-- Float links to the right. Hide them on small screens -->
-            <div class="w3-right w3-hide-small">
-                <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-                <a href="#about" class="w3-bar-item w3-button">About</a>
-                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-                <a href="mailto:reen113355@gmail.com" class="w3-bar-item w3-button">Email</a>
-                <a href="https://www.facebook.com/skylinefurniture2016/" class="w3-bar-item w3-button"><img
-                        src="pictures/facebook.png" alt="facebook" style="height: 25px;width: 25px;"></a>
-                <a href="https://www.instagram.com/skytrading/?hl=en" class="w3-bar-item w3-button"><img
-                        src="pictures/Instagram.png" alt="instagram" style="height: 25px;width: 25px;"></a>
-
-            </div>
+      <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+        <a href="index.html" class="w3-bar-item w3-button"
+          ><b>SkyLine</b> Furniture</a
+        >
+        <!-- Float links to the right. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+          <a href="#about" class="w3-bar-item w3-button">About</a>
+          <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+          <a href="mailto:reen113355@gmail.com" class="w3-bar-item w3-button"
+            >Email</a
+          >
+          <a
+            href="https://www.facebook.com/skylinefurniture2016/"
+            class="w3-bar-item w3-button"
+            ><img
+              src="pictures/facebook.png"
+              alt="facebook"
+              style="height: 25px; width: 25px"
+          /></a>
+          <a
+            href="https://www.instagram.com/skytrading/?hl=en"
+            class="w3-bar-item w3-button"
+            ><img
+              src="pictures/Instagram.png"
+              alt="instagram"
+              style="height: 25px; width: 25px"
+          /></a>
         </div>
+      </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <div>
+    <div class="container my-5 py-5">
+      <!-- White foam -->
+      <div class="row mt-5 flex-column-reverse flex-md-row">
+        <div class="col-md-6">
+          <h1 class="mb-5">White foam</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+            facere iusto similique natus. Rerum saepe excepturi nulla, officiis,
+            blanditiis, quae enim tempora a aliquam alias mollitia laborum
+            doloribus accusamus tenetur.
+          </p>
+          <form class="row g-3 mt-5" id="formWhite">
+            <div class="col-12">
+              <label for="length" class="form-label">Length in inches:</label>
+              <input
+                type="number"
+                required
+                class="form-control"
+                id="lengthWhite"
+              />
+            </div>
+            <div class="col-12">
+              <label for="width" class="form-label">Width in inches:</label>
+              <input
+                type="number"
+                required
+                class="form-control"
+                id="widthWhite"
+              />
+            </div>
+            <div class="col-12">
+              <label for="width" class="form-label">Height in inches:</label>
+              <input
+                type="number"
+                required
+                class="form-control"
+                id="heightWhite"
+              />
+            </div>
+
+            <div class="col-12">
+              <label for="cost" class="form-label">It will cost you:</label>
+              <input
+                type="number"
+                disabled
+                class="form-control"
+                placeholder="$"
+                id="costWhite"
+              />
+            </div>
+
+            <div class="col-12 mt-5">
+              <button type="submit" class="btn btn btn-dark">Calculate</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <img
+            alt="White"
+            class="img-fluid"
+            src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <hr class="border my-5 border-1 opacity-50" />
+      <!-- Blue foam -->
+      <div class="row mt-5 flex-column-reverse flex-md-row">
+        <div class="col-md-6">
+          <h1 class="mb-5">Blue foam</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+            facere iusto similique natus. Rerum saepe excepturi nulla, officiis,
+            blanditiis, quae enim tempora a aliquam alias mollitia laborum
+            doloribus accusamus tenetur.
+          </p>
+          <form class="row g-3 mt-5" id="formBlue">
+            <div class="col-12">
+              <label for="length" class="form-label">Length in inches:</label>
+              <input
+                type="number"
+                required
+                class="form-control"
+                id="lengthBlue"
+              />
+            </div>
+            <div class="col-12">
+              <label for="width" class="form-label">Width in inches:</label>
+              <input
+                type="number"
+                required
+                class="form-control"
+                id="widthBlue"
+              />
+            </div>
+            <div class="col-12">
+              <label for="width" class="form-label">Height in inches:</label>
+              <input
+                type="number"
+                required
+                class="form-control"
+                id="heightBlue"
+              />
+            </div>
+
+            <div class="col-12">
+              <label for="cost" class="form-label">It will cost you:</label>
+              <input
+                type="number"
+                disabled
+                class="form-control"
+                placeholder="$"
+                id="costBlue"
+              />
+            </div>
+
+            <div class="col-12 mt-5">
+              <button type="submit" class="btn btn btn-dark">Calculate</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <img
+            alt="White"
+            class="img-fluid"
+            src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <hr class="border my-5 border-1 opacity-50" />
+      <!-- Hard foam -->
+      <div class="row mt-5 flex-column-reverse flex-md-row">
+        <div class="col-md-6">
+          <h1 class="mb-5">Hard foam</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+            facere iusto similique natus. Rerum saepe excepturi nulla, officiis,
+            blanditiis, quae enim tempora a aliquam alias mollitia laborum
+            doloribus accusamus tenetur.
+          </p>
+          <form class="row g-3 mt-5" id="formHard">
+            <div class="col-12">
+              <label for="length" class="form-label">Length in inches:</label>
+              <input
+                type="number"
+                required
+                class="form-control"
+                id="lengthHard"
+              />
+            </div>
+            <div class="col-12">
+              <label for="width" class="form-label">Width in inches:</label>
+              <input
+                type="number"
+                required
+                class="form-control"
+                id="widthHard"
+              />
+            </div>
+            <div class="col-12">
+              <label for="width" class="form-label">Height in inches:</label>
+              <input
+                type="number"
+                required
+                class="form-control"
+                id="heightHard"
+              />
+            </div>
+
+            <div class="col-12">
+              <label for="cost" class="form-label">It will cost you:</label>
+              <input
+                type="number"
+                disabled
+                class="form-control"
+                placeholder="$"
+                id="costHard"
+              />
+            </div>
+
+            <div class="col-12 mt-5">
+              <button type="submit" class="btn btn btn-dark">Calculate</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <img
+            alt="White"
+            class="img-fluid"
+            src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- <div>
         <img src="pictures/BQBQ.JPG" alt="help" style="Float: right;width: 40%;">
 
         <form>
@@ -60,7 +274,12 @@
             <br>
 
 
-    </div>
-</body>
-
+    </div> -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="./app.js"></script>
+  </body>
 </html>

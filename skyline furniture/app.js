@@ -8,7 +8,7 @@ const allOptions = document.querySelectorAll('option');
 const prevBtn = document.querySelector('#prevStep');
 
 
-heightSelect.addEventListener('change', ()=> [
+heightSelect?.addEventListener('change', ()=> [
     alert('Changed', allOptions)
 ])
 
@@ -63,7 +63,7 @@ function allSelectedOpions(){
     document.querySelectorAll('option[checked]')
 }
 
-prevBtn.addEventListener('click', ()=>{
+prevBtn?.addEventListener('click', ()=>{
     prevStep()
 })
 
@@ -82,4 +82,52 @@ eventClickContainers.forEach(item => {
 })
 
 
+// Calculate white form 
+
+const formWhite = document.querySelector('#formWhite');
+
+formWhite.addEventListener("submit", (e)=>{
+
+  const lengthWhite = document.querySelector('#lengthWhite').value;
+  const widthWhite = document.querySelector('#widthWhite').value;
+  const heightWhite = document.querySelector('#heightWhite').value;
+  const costWhite = document.querySelector('#costWhite');
+
+  e.preventDefault();
+
+  costWhite.placeholder = lengthWhite*widthWhite*heightWhite/144*1.5*1.5;
+})
+
+// Calculate blue form 
+
+const formBlue = document.querySelector('#formBlue');
+
+formBlue.addEventListener("submit", (e)=>{
+
+  const lengthBlue = document.querySelector('#lengthBlue').value;
+  const widthBlue = document.querySelector('#widthBlue').value;
+  const heightBlue = document.querySelector('#heightBlue').value;
+  const costBlue = document.querySelector('#costBlue');
+
+  e.preventDefault();
+
+  costBlue.placeholder = lengthBlue*widthBlue*heightBlue/144*1.5*1.5;
+})
+
+
+// Calculate hard form 
+
+const formHard = document.querySelector('#formHard');
+
+formHard.addEventListener("submit", (e)=>{
+
+  const lengthHard = document.querySelector('#lengthHard').value;
+  const widthHard = document.querySelector('#widthHard').value;
+  const heightHard = document.querySelector('#heightHard').value;
+  const costHard = document.querySelector('#costHard');
+
+  e.preventDefault();
+
+  costHard.placeholder = lengthHard*widthHard*heightHard/144*1.5*1.5;
+})
 
