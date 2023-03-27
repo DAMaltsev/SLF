@@ -86,7 +86,7 @@ eventClickContainers.forEach(item => {
 
 const formWhite = document.querySelector('#formWhite');
 
-formWhite.addEventListener("submit", (e)=>{
+formWhite?.addEventListener("submit", (e)=>{
 
   const lengthWhite = document.querySelector('#lengthWhite').value;
   const widthWhite = document.querySelector('#widthWhite').value;
@@ -95,14 +95,14 @@ formWhite.addEventListener("submit", (e)=>{
 
   e.preventDefault();
 
-  costWhite.placeholder = lengthWhite*widthWhite*heightWhite/144*1.5*1.5;
+  costWhite.placeholder = Math.round(lengthWhite*widthWhite*heightWhite/144*1.5*1.5);
 })
 
 // Calculate blue form 
 
 const formBlue = document.querySelector('#formBlue');
 
-formBlue.addEventListener("submit", (e)=>{
+formBlue?.addEventListener("submit", (e)=>{
 
   const lengthBlue = document.querySelector('#lengthBlue').value;
   const widthBlue = document.querySelector('#widthBlue').value;
@@ -111,7 +111,7 @@ formBlue.addEventListener("submit", (e)=>{
 
   e.preventDefault();
 
-  costBlue.placeholder = lengthBlue*widthBlue*heightBlue/144*1.5*1.5;
+  costBlue.placeholder = Math.round(lengthBlue*widthBlue*heightBlue/144*1.5*1.5);
 })
 
 
@@ -119,7 +119,7 @@ formBlue.addEventListener("submit", (e)=>{
 
 const formHard = document.querySelector('#formHard');
 
-formHard.addEventListener("submit", (e)=>{
+formHard?.addEventListener("submit", (e)=>{
 
   const lengthHard = document.querySelector('#lengthHard').value;
   const widthHard = document.querySelector('#widthHard').value;
@@ -128,6 +128,28 @@ formHard.addEventListener("submit", (e)=>{
 
   e.preventDefault();
 
-  costHard.placeholder = lengthHard*widthHard*heightHard/144*1.5*1.5;
+  costHard.placeholder = Math.round(lengthHard*widthHard*heightHard/144*1.5*1.5);
+})
+
+// Open admin
+
+const btnNy = document.querySelector('#btn_ny');
+const btnMich = document.querySelector('#btn_mich');
+const screenChoose = document.querySelector('[data-screen="1"]');
+const contNY = document.querySelector('[data-city="ny"]')
+const contMich = document.querySelector('[data-city="mich"]')
+
+function openTab(e, item){
+  e.preventDefault();
+  screenChoose.classList.add('d-none')
+  item.classList.remove('d-none')
+}
+
+btnNy.addEventListener('click', (e) => {
+  openTab(e, contNY);
+})
+
+btnMich.addEventListener('click', (e) => {
+  openTab(e, contMich);
 })
 
